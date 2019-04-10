@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name            = 'LyftSDK'
-  s.version         = '1.0.6'
-  s.summary         = 'The official Lyft iOS SDK.'
-  s.homepage        = 'https://github.com/lyft/lyft-iOS-sdk'
+  s.version         = '1.0.7'
+  s.summary         = 'A fork of: The official Lyft iOS SDK.'
+  s.homepage        = 'https://github.com/roadmaptravel/lyft-iOS-sdk'
   s.license         = { :type => 'Apache', :file => 'LICENSE' }
-  s.author          = { 'Gilad Gurantz' => 'gilad@lyft.com' }
-  s.source          = { :git => 'https://github.com/lyft/lyft-iOS-sdk.git', :tag => s.version.to_s }
+  s.authors          = { 'Gilad Gurantz' => 'gilad@lyft.com', 'Paul van Roosendaal' => 'paul@getroadmap.com'  }
+  s.source          = { :git => 'https://github.com/roadmaptravel/lyft-iOS-sdk.git', :tag => s.version.to_s }
   s.default_subspec = 'Core'
   s.ios.deployment_target = '8.0'
 

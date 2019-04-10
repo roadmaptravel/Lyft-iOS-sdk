@@ -277,6 +277,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = FB7CA70D1DD1252800303FEB;
@@ -490,7 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lyft.LyftSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -510,7 +511,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lyft.LyftSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

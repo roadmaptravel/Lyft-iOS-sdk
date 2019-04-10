@@ -28,8 +28,10 @@ func lyftURLEncodedInURL(request: URLRequest, parameters: [String: Any]?) -> (UR
         .sorted { $0.0 < $1.0 }
         .flatMap { components(forKey: $0, value: $1) }
 
-    var urlComponents = URLComponents(url: mutableURLRequest.url!, resolvingAgainstBaseURL: false)
-    urlComponents?.queryItems = (urlComponents?.queryItems ?? []) + queryItems
+    var urlComponents = URLComponents(url: mutableURLRequest.url!, resolvingAgainstBaseURL: false)	
+	var localVariable = urlComponents
+	urlComponents?.queryItems = (localVariable?.queryItems ?? []) + queryItems
+
     mutableURLRequest.url = urlComponents?.url
     return (mutableURLRequest, nil)
 }
